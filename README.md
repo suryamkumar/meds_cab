@@ -1,17 +1,22 @@
-# meds_cab
+# 🚑 Ambulance Booking App
 
-A new Flutter project.
+A Flutter-based ambulance booking application with clean architecture, modern UI, and real-time selection handling using GetX.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📱 Features
 
-A few resources to get you started if this is your first Flutter project:
+- 🚑 Browse multiple ambulance types
+- 📍 Pickup & destination UI (timeline style)
+- ✅ Select ambulance with single selection logic
+- ⏱️ Dynamic timer support
+- 🧾 Clean bottom sheet CTA (Book Now)
+- 🔙 Exit confirmation bottom sheet
+- ⚡ Smooth state management using GetX
+- 🎯 Clean architecture (Separation of concerns)
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🏗️ Architecture
+
+This project follows **Clean Architecture**:
