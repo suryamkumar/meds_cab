@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../utils/colors.dart';
 
 final ThemeData themeData = ThemeData(
@@ -42,6 +43,18 @@ final ThemeData themeData = ThemeData(
       fontSize: 14,
       fontWeight: FontWeight.w600,
       color: kWhite,
+    ),
+  ),
+
+  /// ✅ APPBAR
+  appBarTheme: const AppBarTheme(
+    backgroundColor: kWhite,
+    foregroundColor: textPrimary,
+    elevation: 0,
+    centerTitle: true,
+    systemOverlayStyle: SystemUiOverlayStyle(
+      statusBarColor: pinkShade700,
+      statusBarIconBrightness: Brightness.dark,
     ),
   ),
 

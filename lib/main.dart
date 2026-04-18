@@ -14,7 +14,7 @@ Future<void> main() async {
       systemNavigationBarColor: Colors.transparent,
       systemNavigationBarDividerColor: Colors.transparent,
       systemNavigationBarIconBrightness: Brightness.dark,
-      statusBarIconBrightness: Brightness.light, // 🔥 important for visibility
+      statusBarIconBrightness: Brightness.dark, // 🔥 important for visibility
     ),
   );
 
