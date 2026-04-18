@@ -24,4 +24,4 @@ This project follows **GetX Clean Architecture**:
 ## 📸 Screenshots
 
 ### 🚑 Home Screen with Ambulance List
-![Ambulance List](Home screen.png)
+![Ambulance List](Home screen.jpeg)
