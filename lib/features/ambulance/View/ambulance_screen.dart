@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:meds_cab/core/extensions/spacing.dart';
 import 'package:meds_cab/core/utils/colors.dart';
@@ -15,41 +16,47 @@ class AmbulanceScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: CustomAppBar(title: "Book Ambulance"),
-      body: Column(
-        children: [
-          _locationSection(context),
-          Padding(
-            padding: const EdgeInsets.all(12),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text("Select Ambulance Type",
-                    style: context.bodyMedium.copyWith(fontWeight: FontWeight.w600, fontSize: 18)),
-                Text("(0.22 Km)",
-                    style: context.bodyMedium.copyWith(fontWeight: FontWeight.w600, fontSize: 18)),
-              ],
-            ),
-          ),
-
-          Expanded(
-            child: Obx(() => ListView.builder(
-              itemCount: controller.list.length,
-              itemBuilder: (_, index) {
-                final item = controller.list[index];
-
-                return AmbulanceCard(
-                  data: item,
-                  onTap: () => controller.selectItem(index),
-                );
-              },
-            )),
-          ),
-          h40,
-        ],
+    return AnnotatedRegion<SystemUiOverlayStyle>(
+      value: const SystemUiOverlayStyle(
+        statusBarColor: pinkShade700,
+        statusBarIconBrightness: Brightness.dark,
       ),
-      bottomSheet: _bookButton(context),
+      child: Scaffold(
+        appBar: CustomAppBar(title: "Book Ambulance"),
+        body: Column(
+          children: [
+            _locationSection(context),
+            Padding(
+              padding: const EdgeInsets.all(12),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Select Ambulance Type",
+                      style: context.bodyMedium.copyWith(fontWeight: FontWeight.w600, fontSize: 18)),
+                  Text("(0.22 Km)",
+                      style: context.bodyMedium.copyWith(fontWeight: FontWeight.w600, fontSize: 18)),
+                ],
+              ),
+            ),
+      
+            Expanded(
+              child: Obx(() => ListView.builder(
+                itemCount: controller.list.length,
+                itemBuilder: (_, index) {
+                  final item = controller.list[index];
+      
+                  return AmbulanceCard(
+                    data: item,
+                    onTap: () => controller.selectItem(index),
+                  );
+                },
+              )),
+            ),
+            h40,
+          ],
+        ),
+        bottomSheet: _bookButton(context),
+      ),
     );
   }
   Widget _locationSection(BuildContext context) {

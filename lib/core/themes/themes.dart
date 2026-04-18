@@ -45,14 +45,6 @@ final ThemeData themeData = ThemeData(
     ),
   ),
 
-  /// ✅ APPBAR
-  appBarTheme: const AppBarTheme(
-    backgroundColor: kWhite,
-    foregroundColor: textPrimary,
-    elevation: 0,
-    centerTitle: true,
-  ),
-
   /// ✅ ICON
   iconTheme: const IconThemeData(
     color: iconRed,

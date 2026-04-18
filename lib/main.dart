@@ -8,13 +8,13 @@ import 'features/welcome/view/splash_screen.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  Color? kPrimary;
   SystemChrome.setSystemUIOverlayStyle(
-    const SystemUiOverlayStyle(
-      statusBarColor: primaryColor,
+    SystemUiOverlayStyle(
+      statusBarColor: pinkShade700,
       systemNavigationBarColor: Colors.transparent,
       systemNavigationBarDividerColor: Colors.transparent,
       systemNavigationBarIconBrightness: Brightness.dark,
+      statusBarIconBrightness: Brightness.light, // 🔥 important for visibility
     ),
   );
 
