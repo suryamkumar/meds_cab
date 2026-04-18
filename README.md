@@ -19,4 +19,9 @@ A Flutter-based ambulance booking application with clean architecture, modern UI
 
 ## 🏗️ Architecture
 
-This project follows **Clean Architecture**:
+This project follows **GetX Clean Architecture**:
+
+## 📸 Screenshots
+
+### 🚑 Home Screen with Ambulance List
+![Ambulance List](Home screen.png)
