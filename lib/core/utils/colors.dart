@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 const Color primaryColor = Color(0xFFE53950);   // Red
-const Color accentGreen = Color(0xFF2ECC71);    // Success
+const Color accentGreen = Color(0xFF2ECC71);    // Success or Secondary theme Color
 const Color accentTeal = Colors.teal;          // Selected border / highlight
 const Color kWhite = Colors.white;             //Primary White Color
 
