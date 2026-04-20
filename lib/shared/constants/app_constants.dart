@@ -1,5 +1,4 @@
 class AppConstants {
-  AppConstants._();
 
   // ── App Info ──────────────────────────────────────────────────────────────
   static const String appName = 'MedsCab';
@@ -20,4 +19,6 @@ class AppConstants {
   // ── Storage Keys ─────────────────────────────────────────────────────────
   static const String userKey = 'user_data';
   static const String onboardingKey = 'onboarding_done';
+  // Also Use Flutter Secure Storage to store JWT and other sensitive data e.g profile data of user
+
 }

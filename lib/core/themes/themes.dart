@@ -7,19 +7,17 @@ final ThemeData themeData = ThemeData(
 
   scaffoldBackgroundColor: kWhite,
 
-  /// ✅ COLOR SCHEME (FIXED)
+  // COLOR SCHEME
   colorScheme: const ColorScheme.light(
     primary: primaryColor,
     secondary: accentGreen,
     surface: kWhite,
-    background: kWhite,
     onPrimary: kWhite,
     onSecondary: kWhite,
-    onSurface: textPrimary,   // ✅ FIXED
-    onBackground: textPrimary,
+    onSurface: textPrimary,
   ),
 
-  /// ✅ TEXT THEME (IMPROVED)
+  // TEXT THEME
   textTheme: const TextTheme(
     headlineLarge: TextStyle(
       fontSize: 22,
@@ -46,7 +44,7 @@ final ThemeData themeData = ThemeData(
     ),
   ),
 
-  /// ✅ APPBAR
+  // APPBAR
   appBarTheme: const AppBarTheme(
     backgroundColor: kWhite,
     foregroundColor: textPrimary,
@@ -58,12 +56,12 @@ final ThemeData themeData = ThemeData(
     ),
   ),
 
-  /// ✅ ICON
+  // ICON
   iconTheme: const IconThemeData(
     color: iconRed,
   ),
 
-  /// ✅ CARD
+  // CARD
   cardTheme: CardThemeData(
     color: kWhite,
     elevation: 0,
@@ -73,7 +71,7 @@ final ThemeData themeData = ThemeData(
     ),
   ),
 
-  /// ✅ BUTTON
+  // BUTTON
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       backgroundColor: primaryColor,
@@ -86,7 +84,7 @@ final ThemeData themeData = ThemeData(
     ),
   ),
 
-  /// ✅ DIVIDER
+  // DIVIDER
   dividerTheme: const DividerThemeData(
     color: borderColor,
     thickness: 1,

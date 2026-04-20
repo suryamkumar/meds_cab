@@ -2,37 +2,37 @@ import 'package:flutter/material.dart';
 
 extension StyleExtension on BuildContext {
 
-  /// Access full TextTheme
+  // Access full TextTheme
   TextTheme get style => Theme.of(this).textTheme;
 
-  /// 16sp – Main paragraph text
-  /// Use for normal content body
-  /// Recommended color: Colors.black87 / kPrimaryText
+  //  16sp – Main paragraph text
+  //  Use for normal content body
+  //  Recommended color: Colors.black87 / kPrimaryText
   TextStyle get bodyLarge => style.bodyLarge ?? const TextStyle();
 
-  /// 14sp – Secondary body text
-  /// Use for descriptions, subtitles
-  /// Recommended color: Colors.grey.shade700 / kSecondaryText
+  // 14sp – Secondary body textt
+  // Use for descriptions, subtitles
+  // Recommended color: Colors.grey.shade700 / kSecondaryTex
   TextStyle get bodyMedium => style.bodyMedium ?? const TextStyle();
 
-  /// 12sp – Small captions
-  /// Use for hints, timestamps, small info
-  /// Recommended color: Colors.grey / kGrey
+  // 12sp – Small captions
+  // Use for hints, timestamps, small info
+  // Recommended color: Colors.grey / kGrey
   TextStyle get bodySmall => style.bodySmall ?? const TextStyle();
 
-  /// 14sp – Button text (Primary button)
-  /// Recommended color: kWhite (if filled button)
+  // 14sp – Button text (Primary button)
+  // Recommended color: kWhite (if filled button)
   TextStyle get labelLarge => style.labelLarge ?? const TextStyle();
 
-  /// 12sp – Secondary button / small button
+  // 12sp – Secondary button / small button
   TextStyle get labelMedium => style.labelMedium ?? const TextStyle();
 
-  /// 11sp – Tiny label / tags
+  // 11sp – Tiny label / tags
   TextStyle get labelSmall => style.labelSmall ?? const TextStyle();
 
-  /// 22sp – Card titles
-  /// Use for section headings inside cards
-  /// Recommended color: kPrimary / Colors.black
+  // 22sp – Card titles
+  // Use for section headings inside cards
+  // Recommended color: kPrimary / Colors.black
   TextStyle get titleLarge => style.titleLarge ?? const TextStyle();
 
   /// 16sp – List title / Medium heading

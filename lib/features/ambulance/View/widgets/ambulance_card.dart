@@ -10,6 +10,7 @@ class AmbulanceCard extends StatelessWidget {
   final VoidCallback onTap;
 
   const AmbulanceCard({
+    super.key,
     required this.data,
     required this.onTap,
   });
@@ -80,8 +81,7 @@ class AmbulanceCard extends StatelessWidget {
                       fontSize: 16,
                     )),
                 w4,
-                Icon(Icons.info,
-                    size: 20, color: warningRed),
+                Icon(Icons.info, size: 20, color: warningRed),
               ],
             )
           ],

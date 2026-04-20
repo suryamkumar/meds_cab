@@ -22,7 +22,7 @@ class _SplashPageState extends State<SplashPage> {
   }
 
   Future<void> _navigate() async {
-    // Wait for splash animation
+    // Wait for splash animation after Home Screen Appear
     await Future.delayed(const Duration(milliseconds: 1800));
 
     if (!mounted) return;

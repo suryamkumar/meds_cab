@@ -18,7 +18,6 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     if (Platform.isIOS) {
       return CupertinoNavigationBar(
-        backgroundColor: pinkShade700, // ✅ add this
         middle: Text(
           title,
           style: const TextStyle(

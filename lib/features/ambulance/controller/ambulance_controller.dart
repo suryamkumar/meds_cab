@@ -66,7 +66,7 @@ class AmbulanceController extends GetxController {
   }
 
   void selectItem(int index) {
-    list.value = list.map((e) => e.copyWith(isSelected: false)).toList();
+    list.value = list.map((ambulance) => ambulance.copyWith(isSelected: false)).toList();
 
     list[index] = list[index].copyWith(isSelected: true);
   }
